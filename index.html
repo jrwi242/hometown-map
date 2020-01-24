@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html>
 
@@ -121,6 +122,19 @@
 			.bindTooltip(message)
 			.addTo(map)
 			.openTooltip();
+		// var Hotspot // declare variable
+		Hotspot ="Tomo"; // Assign variable
+    var address = "848 E High St",
+	   addressCity = "Lexington, KY",
+	   photo = "<img src= GIS/ramen.jpg>";
+	var coords = [38.0298,-84.4900]
+   console.log(coords);
+	console.log(coords[0], coords[1]);
+// two outputs, one to console and the other HTML element
+	console.log(Hotspot + address);
+  document.getElementByID('Hotspot').innerHTML =Hotspot
+	Hotspot + "<br>" + address + "<br>"+ addressCity + "<br>"+"latitude:"+coords[0]+", longitude:"+ coords[1]+"<br>";
+
 	</script>
 
 </body>
