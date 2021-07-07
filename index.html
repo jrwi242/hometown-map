@@ -20,7 +20,9 @@
 			font-family: "Noto Sans", sans-serif;
 			color: #3d3d3d;
 		}
-
+		/* INSTRUCTOR COMMENT:
+		Let's experiment! Change the style property that controls the width of all elements inside "section". If we change from a fixed-width to a relative width, the content adapts better for different screen sizes. Try setting the width to 80%
+		*/
 		section {
 			width: 960px;
 			margin: 20px auto;
@@ -88,7 +90,7 @@
 			<li>See my projects on GitHub:
 				<a href="https://github.com/jrwi242">jrwi242</a>
 			</li>
-			
+
 		</ul>
 	</section>
 
@@ -96,11 +98,14 @@
 	    crossorigin="anonymous"></script>
 	<script src="https://unpkg.com/leaflet@1.3.1/dist/leaflet-src.js"></script>
 	<script>
-		// This is a comment in JavaScript 
+		// This is a comment in JavaScript
 
 		// map options
 		var options = {
-			center: [38.0406 , 84.5037 ], // lat/lon values
+			/* INSTRUCTOR COMMENT
+			Longitude values for locations in the Lower 48 States are always negative
+			*/
+			center: [38.0406 , -84.5037 ], // lat/lon values
 			zoom: 12
 		}
 
